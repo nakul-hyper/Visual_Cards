@@ -1,4 +1,13 @@
-import { Card1, Card2, Card3, Card4 } from "./cards";
+import {
+  Card1,
+  Card2,
+  Card3,
+  Card4,
+  Card5,
+  Card6,
+  Card7,
+  Card8,
+} from "./cards";
 
 export default function App() {
   return (
@@ -7,6 +16,10 @@ export default function App() {
       <Card2 />
       <Card3 />
       <Card4 />
+      <Card5 />
+      <Card6 />
+      <Card7 />
+      <Card8 />
     </div>
   );
 }
