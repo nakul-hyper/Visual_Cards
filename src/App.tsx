@@ -1,7 +1,7 @@
-import { Card1 } from "./cards";
+import { Card2 } from "./cards2";
 
 export default function App() {
   return (
-    <Card1 />
+    <Card2 />
   );
 }
