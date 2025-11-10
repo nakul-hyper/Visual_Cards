@@ -1,5 +1,3 @@
-import React from "react";
-
 type Stat = {
     label: string;
     value: string | number;
@@ -7,7 +5,7 @@ type Stat = {
     gradient: string; // tailwind bg gradient classes
 };
 
-function StatCard({ label, value, sub, gradient }: Stat) {
+function StatCard({ label, value, gradient }: Stat) {
     return (
         <div className="relative overflow-hidden rounded-3xl shadow-[0_20px_50px_rgba(0,0,0,0.15)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_25px_60px_rgba(0,0,0,0.25)]">
             <div
@@ -56,7 +54,7 @@ function StatCard({ label, value, sub, gradient }: Stat) {
     );
 }
 
-export function Card2() {
+export function Card816() {
     const stats: Stat[] = [
         {
             label: "Revenue",
@@ -118,5 +116,5 @@ export function Card2() {
     );
 }
 
-export default Card2;
+export default Card816;
 
