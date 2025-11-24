@@ -9,6 +9,8 @@ import {
   Card8,
 } from "./cards";
 
+import Colour from "./colourtest";
+
 import Card816 from "./cards2";
 
 export default function App() {
@@ -23,6 +25,7 @@ export default function App() {
       <Card7 />
       <Card8 />
       <Card816 />
+      <Colour />
     </div>
   );
 }

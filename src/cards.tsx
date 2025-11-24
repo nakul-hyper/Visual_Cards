@@ -7,7 +7,7 @@ export function Card1() {
   return (
     <div className="relative w-80 h-50 group">
       {/* Border */}
-      <div className="absolute inset-0 bg-linear-to-br from-blue-400 via-indigo-400 to-purple-500 rounded-2xl"></div>
+      <div className="absolute inset-0 bg-linear-to-br from-teal-600 via-cyan-500 to-emerald-600 rounded-2xl"></div>
 
       {/* White background*/}
       <div className="absolute inset-0.5 bg-white rounded-2xl"></div>
@@ -17,7 +17,7 @@ export function Card1() {
         {/* Header */}
         <div>
           <div className="flex justify-between items-start">
-            <h3 className=" p-1.5 text-xs font-semibold uppercase tracking-wider bg-linear-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent">
+            <h3 className=" p-1.5 text-xs font-semibold uppercase tracking-wider bg-linear-to-r from-teal-600 via-cyan-600 to-emerald-600 bg-clip-text text-transparent">
               Total Users
             </h3>
 
@@ -39,16 +39,16 @@ export function Card1() {
             </div>
           </div>
           {/*Line*/}
-          <div className="h-1 w-full bg-linear-to-r from-blue-500 via-indigo-500 to-purple-500 rounded-full"></div>
+          <div className="h-1 w-full bg-linear-to-r from-teal-600 via-cyan-500 to-emerald-600 rounded-full"></div>
         </div>
 
         {/* Dropdown Menu */}
         {showMenu && (
           <div className="absolute right-4 top-12 bg-white rounded-xl shadow-2xl p-2 w-60 z-50 border border-gray-200">
-            <button className="flex items-center gap-3 w-full p-2 hover:bg-blue-50 rounded-lg text-gray-700 text-sm font-medium transition-all duration-150">
+            <button className="flex items-center gap-3 w-full p-2 hover:bg-cyan-50 rounded-lg text-gray-700 text-sm font-medium transition-all duration-150">
               <span>Schedule report to mail</span>
             </button>
-            <button className="flex items-center gap-3 w-full p-2 hover:bg-blue-50 rounded-lg text-gray-700 text-sm font-medium transition-all duration-150">
+            <button className="flex items-center gap-3 w-full p-2 hover:bg-cyan-50 rounded-lg text-gray-700 text-sm font-medium transition-all duration-150">
               <span>Remove from Dashboard</span>
             </button>
             <div className="h-px bg-gray-200 my-1"></div>
@@ -61,7 +61,7 @@ export function Card1() {
         {/* Main Value Display */}
         <div className="flex-1 flex flex-col justify-center items-center mb-4">
           <div className="relative ">
-            <p className=" text-5xl font-bold bg-linear-to-br from-blue-600 via-indigo-600 to-purple-700 bg-clip-text text-transparent tracking-tight">
+            <p className=" text-5xl font-bold bg-linear-to-br from-teal-600 via-cyan-600 to-emerald-700 bg-clip-text text-transparent tracking-tight">
               126,285
             </p>
           </div>
@@ -141,21 +141,32 @@ export function Card3() {
 
   return (
     <div className="relative w-80 h-50 group">
-      {/* Gradient background - Navy to Slate */}
-      <div className="absolute inset-0 bg-linear-to-br from-slate-800 via-slate-700 to-slate-900 rounded-2xl shadow-xl"></div>
-
-      {/* Subtle accent line on left */}
-      <div className="absolute left-0 top-8 bottom-8 w-1 bg-linear-to-b from-cyan-400 via-blue-400 to-indigo-400 rounded-r-full"></div>
+      {/* Gradient background - Professional Green (lighter) */}
+      <div
+        className="absolute inset-0 rounded-2xl shadow-xl"
+        style={{
+          background:
+            "linear-gradient(to bottom right, #00c74d, #00a63e, #008533)",
+        }}
+      ></div>
 
       {/* Content */}
       <div className="relative h-full flex flex-col justify-center items-center p-4">
         {/* Header - Absolute positioning */}
         <div className="absolute top-4 left-4 right-4 flex justify-between items-start">
           <div>
-            <h3 className="text-cyan-400 text-xs font-bold uppercase tracking-wider mb-1">
+            <h3
+              className="text-xs font-bold uppercase tracking-wider mb-1"
+              style={{ color: "#b8f5d1" }}
+            >
               Active Projects
             </h3>
-            <div className="h-0.5 w-16 bg-linear-to-r from-cyan-400 to-transparent"></div>
+            <div
+              className="h-0.5 w-16"
+              style={{
+                background: "linear-gradient(to right, #b8f5d1, transparent)",
+              }}
+            ></div>
           </div>
 
           {/* Buttons */}
